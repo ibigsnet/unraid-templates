@@ -7,7 +7,6 @@ Community Applications repository for **RifleJock / ibigsnet**.
 | App | Type | Notes |
 |-----|------|--------|
 | [Storage Guard](plugins/storageguard.xml) | Plugin | Source: [ibigsnet/StorageGuard](https://github.com/ibigsnet/StorageGuard) |
-| [resonite-headless](templates/resonite-headless.xml) | Docker | Resonite VR headless ([shadowpanther/resonite-headless](https://github.com/shadowpanther/resonite-headless)) |
 
 ## CA submit URL
 
