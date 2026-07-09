@@ -7,7 +7,8 @@ RifleJock's Unraid Community Apps repository.
 - Storage Guard — free-space thresholds for array and pools; colors Main free bars and optional Unraid alerts.
 
 **Docker**
-- neos-headless — Neos VR headless server (SteamCMD)
+- resonite-headless — Resonite VR headless (shadowpanther/resonite-headless)
+- neos-headless — Neos VR headless (legacy)
 
 Support: forum threads linked on each app. Plugin source for Storage Guard is at https://github.com/ibigsnet/StorageGuard
   </Profile>
