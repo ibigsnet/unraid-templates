@@ -18,7 +18,7 @@ Update Notice: Simply restart the container if a newer version of the game is av
 You can also run multiple servers with only one SteamCMD directory!</Overview>
   <Category>GameServers:</Category>
   <WebUI/>
-  <TemplateURL/>
+  <TemplateURL>https://raw.githubusercontent.com/ibigsnet/unraid-docker-templates/main/templates/neos-headless.xml</TemplateURL>
   <Icon>https://avatars.githubusercontent.com/u/79483314?s=200&amp;amp;v=4</Icon>
   <ExtraParams>--restart=unless-stopped</ExtraParams>
   <PostArgs/>

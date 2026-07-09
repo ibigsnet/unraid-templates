@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CommunityApplications>
+  <Profile>
+RifleJock's Unraid Community Apps repository.
+
+**Plugins**
+- Storage Guard — free-space thresholds for array and pools; colors Main free bars and optional Unraid alerts.
+
+**Docker**
+- neos-headless — Neos VR headless server (SteamCMD).
+
+Support: forum threads linked on each app. Plugin source for Storage Guard is at https://github.com/ibigsnet/StorageGuard
+  </Profile>
+  <Icon>https://raw.githubusercontent.com/ibigsnet/unraid-docker-templates/main/icon.svg</Icon>
+  <WebPage>https://github.com/ibigsnet/unraid-docker-templates</WebPage>
+  <Forum>https://forums.unraid.net/topic/199796-plugin-storage-guard/</Forum>
+  <DonateLink>https://www.paypal.com/paypalme/RifleJock</DonateLink>
+  <DonateText>Support development</DonateText>
+</CommunityApplications>
