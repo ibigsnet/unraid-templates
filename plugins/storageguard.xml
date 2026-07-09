@@ -3,7 +3,7 @@
   <Name>Storage Guard</Name>
   <PluginURL>https://raw.githubusercontent.com/ibigsnet/StorageGuard/main/storageguard.plg</PluginURL>
   <PluginAuthor>RifleJock</PluginAuthor>
-  <Support>https://forums.unraid.net/topic/199796-plugin-storage-guard/</Support>
+  <Support>https://forums.unraid.net/topic/199796-plugin-storage-guard-free-space-thresholds-so-you-know-if-a-failed-disk-still-leaves-room-to-move-data/</Support>
   <Project>https://github.com/ibigsnet/StorageGuard</Project>
   <Overview>Free-space thresholds for your array and pools. Colors free bars on Main (yellow/red) and optional Unraid alerts so you know before a drive fails whether you still have room to move data or rebalance.</Overview>
   <Category>Tools:Utilities</Category>

@@ -8,11 +8,11 @@ RifleJock's Unraid Community Apps repository.
 
 Docker templates (Neos / Resonite headless) will return later.
 
-Support: forum threads linked on each app. Plugin source for Storage Guard is at https://github.com/ibigsnet/StorageGuard
+Support: Storage Guard forum thread (topic 199796; URL slug may change if mods move the thread). Plugin source: https://github.com/ibigsnet/StorageGuard
   </Profile>
   <Icon>https://raw.githubusercontent.com/ibigsnet/unraid-templates/main/icon.png</Icon>
   <WebPage>https://github.com/ibigsnet/unraid-templates</WebPage>
-  <Forum>https://forums.unraid.net/topic/199796-plugin-storage-guard/</Forum>
+  <Forum>https://forums.unraid.net/topic/199796-plugin-storage-guard-free-space-thresholds-so-you-know-if-a-failed-disk-still-leaves-room-to-move-data/</Forum>
   <DonateLink>https://www.paypal.com/paypalme/RifleJock</DonateLink>
   <DonateText>Support development</DonateText>
 </CommunityApplications>
