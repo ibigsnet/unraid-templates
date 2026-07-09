@@ -7,7 +7,8 @@ Community Applications repository for **RifleJock / ibigsnet**.
 | App | Type | Notes |
 |-----|------|--------|
 | [Storage Guard](plugins/storageguard.xml) | Plugin | Source: [ibigsnet/StorageGuard](https://github.com/ibigsnet/StorageGuard) |
-| [neos-headless](templates/neos-headless.xml) | Docker | Neos VR headless server — [ibigsnet/neos](https://hub.docker.com/r/ibigsnet/neos) |
+
+Docker templates (neos-headless, resonite-headless) will be re-added later.
 
 ## CA submit URL
 
@@ -21,5 +22,5 @@ Portal: https://ca.unraid.net/submit
 
 - `ca_profile.xml` — repository profile
 - `plugins/` — plugin wrappers (`PluginURL` → raw `.plg`)
-- `templates/` — Docker templates
+- `templates/` — Docker templates (none published right now)
 - `LICENSE` — MIT
