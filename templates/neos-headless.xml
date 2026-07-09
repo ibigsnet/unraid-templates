@@ -2,13 +2,13 @@
 <Container version="2">
   <Name>neos-headless</Name>
   <Repository>shadowpanther/neosvr-headless:latest</Repository>
-  <Registry>https://hub.docker.com/r/shadowpanther/neosvr-headless</Registry>
+  <Registry>https://hub.docker.com/r/ibigsnet/neos</Registry>
   <Network>bridge</Network>
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>true</Privileged>
   <Support>https://discord.com/channels/402159838827905024/619845139770376192</Support>
-  <Project>https://github.com/shadowpanther/neosvr-headless</Project>
+  <Project>https://hub.docker.com/r/ibigsnet/neos</Project>
   <Overview>This Docker will download and install SteamCMD. It will also install neos (headless) and run it.&#xD;
 &#xD;
 ATTENTION: First Startup may take a moment as it downloads the gameserver files!&#xD;
