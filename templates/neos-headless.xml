@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>neos-headless</Name>
+  <Repository>shadowpanther/neosvr-headless:latest</Repository>
+  <Registry>https://hub.docker.com/r/shadowpanther/neosvr-headless</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>true</Privileged>
+  <Support>https://discord.com/channels/402159838827905024/619845139770376192</Support>
+  <Project>https://github.com/shadowpanther/neosvr-headless</Project>
+  <Overview>This Docker will download and install SteamCMD. It will also install neos (headless) and run it.&#xD;
+&#xD;
+ATTENTION: First Startup may take a moment as it downloads the gameserver files!&#xD;
+&#xD;
+Update Notice: Simply restart the container if a newer version of the game is available.&#xD;
+&#xD;
+You can also run multiple servers with only one SteamCMD directory!</Overview>
+  <Category>GameServers:</Category>
+  <WebUI/>
+  <TemplateURL>https://raw.githubusercontent.com/ibigsnet/unraid-templates/main/templates/neos-headless.xml</TemplateURL>
+  <Icon>https://avatars.githubusercontent.com/u/79483314?s=200&amp;amp;v=4</Icon>
+  <ExtraParams>--restart=unless-stopped</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled></DateInstalled>
+  <DonateText>If you feel like helping me out, it's appreciated!</DonateText>
+  <DonateLink>https://paypal.me/RifleJock</DonateLink>
+  <Requires>[ ! --- READ ME --- ! ] &#xD;
+&#xD;
+No ports/port forwarding needed!&#xD;
+&#xD;
+As of the updating of this docker template, you must be a patreon member of neos with at least the Gunter teir support ($12 per month) | https://www.patreon.com/neosvr/membership&#xD;
+&#xD;
+&#xD;
+You must first make a Config.json file, create a new file naming it "Config.json" w/ capital "C".&#xD;
+This file will need to be placed in your neos-headless config file location directory which you will define below.&#xD;
+&#xD;
+An example of the Config.json file can be found in the discord pinned messages in #headless-client (https://discord.com/channels/402159838827905024/619845139770376192)</Requires>
+  <Config Name="SteamCMD" Target="/serverdata/steamcmd" Default="" Mode="rw" Description="" Type="Path" Display="always-hide" Required="true" Mask="false">/mnt/user/appdata/steamcmd</Config>
+  <Config Name="Config File Location" Target="/Config" Default="/mnt/user/appdata/neos-headless/" Mode="rw" Description="This is the path for neos-headless server files." Type="Path" Display="always-hide" Required="true" Mask="false">/mnt/user/appdata/neos-headless/</Config>
+  <Config Name="Logs" Target="/Logs" Default="/mnt/user/appdata/neos-headless/logs/" Mode="rw" Description="This is the log file location for neos-headless server logs." Type="Path" Display="always-hide" Required="true" Mask="false">/mnt/user/appdata/neos-headless/logs/</Config>
+  <Config Name="GAME_ID" Target="GAME_ID" Default="740250" Mode="" Description="The GAME_ID that the container download at startup.&#13;&#10;(https://developer.valvesoftware.com/wiki/Dedicated_Servers_List)" Type="Variable" Display="always-hide" Required="true" Mask="false">740250</Config>
+  <Config Name="Steam Login Username and Password" Target="STEAMLOGIN" Default="" Mode="" Description="Value without parentheses will be as follows: (USERNAME PASSWORD) Ensure that you have a space between the two values. This is necessary in order to download the files from steamcmd and to login to neos via steam to host your headless server. It is recommended to use an alternate steam account with steam guard disabled. If you create a new account, make sure to disable your steam guard by navigating to steam &amp;gt; account &amp;gt; Account details &amp;gt; Account Security &amp;gt; Manage Steam Guard &amp;gt; Turn Steam Guard off (not recommended) AND ALSO navigating to your email and confirming the removal of your steam guard. (https://store.steampowered.com/twofactor/manage) If you fail to do this, you will get rate limited upon container startup, which could lead to an account lock." Type="Variable" Display="always" Required="true" Mask="true"/>
+  <Config Name="Steam Beta Password" Target="STEAMBETAPASSWORD" Default="" Mode="" Description="The value of the password will go in the value field above. See #headless-client in the NEOS Discord and pinned messages to get the password | https://discord.com/channels/402159838827905024/619845139770376192" Type="Variable" Display="always-hide" Required="true" Mask="true"/>
+  <Config Name="Steam Beta Version" Target="STEAMBETA" Default="headless-client" Mode="" Description="headless-client | For more options, visit:&#13;&#10;https://wiki.neos.com/Headless_Client&#13;&#10;-AND/OR-&#13;&#10;https://discord.com/channels/402159838827905024/619845139770376192" Type="Variable" Display="always-hide" Required="true" Mask="false">headless-client</Config>
+  <Config Name="Validate Installation" Target="VALIDATE" Default="" Mode="" Description="Set the Variable to 'true' if you want to validate the installation otherwise leave it blank." Type="Variable" Display="always-hide" Required="false" Mask="false"/>
+  <Config Name="UID" Target="UID" Default="" Mode="" Description="" Type="Variable" Display="advanced-hide" Required="true" Mask="false">99</Config>
+  <Config Name="GID" Target="GID" Default="" Mode="" Description="" Type="Variable" Display="advanced-hide" Required="true" Mask="false">100</Config>
+  <Config Name="Host Local Time Injected to Container" Target="/etc/localtime" Default="/etc/localtime" Mode="ro" Description="This pulls your local timezone file from UNRAID to manage the neos-headless server timezone. | Recommended read-only." Type="Path" Display="advanced-hide" Required="true" Mask="false">/etc/localtime</Config>
+</Container>
