@@ -1,4 +1,4 @@
-# unraid-docker-templates
+# unraid-templates
 
 Community Applications repository for **RifleJock / ibigsnet**.
 
@@ -12,7 +12,7 @@ Community Applications repository for **RifleJock / ibigsnet**.
 ## CA submit URL
 
 ```
-https://github.com/ibigsnet/unraid-docker-templates
+https://github.com/ibigsnet/unraid-templates
 ```
 
 Portal: https://ca.unraid.net/submit
