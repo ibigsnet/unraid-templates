@@ -5,14 +5,15 @@ RifleJock's Unraid Community Apps repository.
 
 **Plugins**
 - Storage Guard — free-space thresholds for array and pools; colors Main free bars and optional Unraid alerts.
+- Thunderbolt Net — single-link host-to-host networking over Thunderbolt/USB4 (tbn tabs, peers, services, honest link quality).
 
 Docker templates (Neos / Resonite headless) will return later.
 
-Support: https://github.com/ibigsnet/StorageGuard (Unraid forum thread later when ready).
+Support: https://github.com/ibigsnet/unraid-templates
   </Profile>
   <Icon>https://raw.githubusercontent.com/ibigsnet/unraid-templates/main/icon.png</Icon>
   <WebPage>https://github.com/ibigsnet/unraid-templates</WebPage>
-  <Forum>https://github.com/ibigsnet/StorageGuard</Forum>
+  <Forum>https://github.com/ibigsnet/unraid-templates</Forum>
   <DonateLink>https://www.paypal.com/paypalme/RifleJock</DonateLink>
   <DonateText>Support development</DonateText>
 </CommunityApplications>

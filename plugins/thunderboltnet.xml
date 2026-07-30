@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Plugin>
+  <Name>Thunderbolt Net</Name>
+  <PluginURL>https://raw.githubusercontent.com/ibigsnet/ThunderboltNet/main/thunderboltnet.plg</PluginURL>
+  <PluginAuthor>RifleJock</PluginAuthor>
+  <Support>https://github.com/ibigsnet/ThunderboltNet/issues</Support>
+  <Project>https://github.com/ibigsnet/ThunderboltNet</Project>
+  <Overview>Reliable single-link host-to-host networking over Thunderbolt/USB4 on Unraid. Fabric overview, trained rate and lanes, per-link settings (tbn0/tbn1…), services on TB IPs, known peers, harden, and activity. One cable, one peer, eth-like UX — not dual-cable bonding or a promise of sticker 40 Gb/s dual-lane.</Overview>
+  <Category>Network:Management</Category>
+  <ReadMe>https://raw.githubusercontent.com/ibigsnet/ThunderboltNet/main/README.md</ReadMe>
+  <IconFA>sitemap</IconFA>
+  <MinVer>6.12.0</MinVer>
+  <License>MIT</License>
+</Plugin>

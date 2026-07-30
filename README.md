@@ -17,6 +17,7 @@ GitHub redirects the old URL. Use **unraid-templates** for CA submit and new lin
 | App | Type | Notes |
 |-----|------|--------|
 | [Storage Guard](plugins/storageguard.xml) | Plugin | Source: [ibigsnet/StorageGuard](https://github.com/ibigsnet/StorageGuard) |
+| [Thunderbolt Net](plugins/thunderboltnet.xml) | Plugin | Source: [ibigsnet/ThunderboltNet](https://github.com/ibigsnet/ThunderboltNet) |
 
 Docker templates (e.g. Neos / Resonite headless) will be re-added under `templates/` later.
 
