@@ -5,7 +5,7 @@
   <PluginAuthor>RifleJock</PluginAuthor>
   <Support>https://github.com/ibigsnet/ThunderboltNet/issues</Support>
   <Project>https://github.com/ibigsnet/ThunderboltNet</Project>
-  <Overview>Reliable single-link host-to-host networking over Thunderbolt/USB4 on Unraid. Fabric overview, trained rate and lanes, per-link settings (tbn0/tbn1…), services on TB IPs, known peers, harden, and activity. One cable, one peer, eth-like UX — not dual-cable bonding or a promise of sticker 40 Gb/s dual-lane.</Overview>
+  <Overview>Single-link host-to-host networking over Thunderbolt 3/4/5 and USB4 / USB4 v2 (20G, 40G, and 80G-class hosts) wherever Linux exposes thunderbolt_net. Fabric overview, trained rate and lanes, tbn0/tbn1… settings, services on TB IPs, known peers, harden, activity. One cable, one peer, eth-like UX — not dual-cable bonding or a promise of full sticker dual-lane TCP.</Overview>
   <Category>Network:Management</Category>
   <ReadMe>https://raw.githubusercontent.com/ibigsnet/ThunderboltNet/main/README.md</ReadMe>
   <IconFA>sitemap</IconFA>
