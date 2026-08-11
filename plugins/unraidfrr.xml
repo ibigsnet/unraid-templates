@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Plugin>
+  <Name>FRR (FRRouting)</Name>
+  <PluginURL>https://raw.githubusercontent.com/ibigsnet/UnraidFRR/main/unraidfrr.plg</PluginURL>
+  <PluginAuthor>RifleJock</PluginAuthor>
+  <Support>https://github.com/ibigsnet/UnraidFRR/issues</Support>
+  <Project>https://github.com/ibigsnet/UnraidFRR</Project>
+  <Overview>Optional FRRouting (FRR) for Unraid: install packages from flash, enable zebra and OpenFabric fabricd (and optional OSPF/BGP/…), Settings UI. Standalone — Thunderbolt Net not required. Idle and safe with no packages. Does not edit eth0/br0 by default. Pair with Thunderbolt Net for TB multi-host OpenFabric.</Overview>
+  <Category>Network:Management</Category>
+  <ReadMe>https://raw.githubusercontent.com/ibigsnet/UnraidFRR/main/README.md</ReadMe>
+  <IconFA>project-diagram</IconFA>
+  <MinVer>6.12.0</MinVer>
+  <License>MIT</License>
+</Plugin>
