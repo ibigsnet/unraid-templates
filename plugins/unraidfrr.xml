@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Plugin>
-  <Name>FRR (FRRouting)</Name>
+  <Name>Fabric routing (FRR)</Name>
   <PluginURL>https://raw.githubusercontent.com/ibigsnet/UnraidFRR/main/unraidfrr.plg</PluginURL>
   <PluginAuthor>RifleJock</PluginAuthor>
   <Support>https://github.com/ibigsnet/UnraidFRR/issues</Support>
   <Project>https://github.com/ibigsnet/UnraidFRR</Project>
-  <Overview>Optional FRRouting (FRR) for Unraid — fully automated (Nvidia Driver style): downloads packages matched to your Unraid product version + arch (not kernel version), enables zebra/fabricd (and optional OSPF/BGP/…). Settings → FRR. Standalone — Thunderbolt Net not required. Does not edit eth0/br0 by default. Pair with Thunderbolt Net for OpenFabric policy on TB underlay.</Overview>
+  <Overview>Optional FRRouting packages for Unraid — fully automated (Nvidia Driver style): downloads packages matched to your Unraid product version + arch (not kernel version), enables zebra/fabricd (and optional OSPF/BGP/…). Lives under Settings → Network Settings → Fabric routing (tab near Routing Table). Standalone — Thunderbolt Net not required. Does not edit eth0/br0 by default. Pair with Thunderbolt Net for OpenFabric policy on TB underlay.</Overview>
   <Category>Network:Management</Category>
   <ReadMe>https://raw.githubusercontent.com/ibigsnet/UnraidFRR/main/README.md</ReadMe>
   <IconFA>project-diagram</IconFA>
