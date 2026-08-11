@@ -6,7 +6,7 @@
   <!-- CA: Support = forum thread; Project = GitHub (both appear in support menu) -->
   <Support>https://forums.unraid.net/topic/200065-plugin-thunderbolt-net-host-to-host-networking-over-thunderbolt-345-and-usb44v2/</Support>
   <Project>https://github.com/ibigsnet/ThunderboltNet</Project>
-  <Overview>Host-to-host networking over Thunderbolt 3/4/5 and USB4 / USB4 v2 (20G, 40G, and 80G-class hosts) wherever Linux exposes thunderbolt_net. Fabric overview, trained rate and lanes, multi-peer tbn0/tbn1… settings, services on TB IPs, known peers, harden, activity; optional OpenFabric multi-host fabric. Eth-like UX — honest trained rates (not sticker dual-lane TCP); dual-cable bonding only when multiple netdevs exist.</Overview>
+  <Overview>Host-to-host networking over Thunderbolt 3/4/5 and USB4 / USB4 v2 wherever Linux exposes thunderbolt_net. Multi-peer tbn tabs, trained rates/lanes (honest — sticker 40/80G-class is not guaranteed TCP), services on TB IPs, known peers; optional OpenFabric (FRR packages via separate UnraidFRR). Configure under Settings → Network Settings → Thunderbolt / tbnN.</Overview>
   <Category>Network:Management</Category>
   <ReadMe>https://raw.githubusercontent.com/ibigsnet/ThunderboltNet/main/README.md</ReadMe>
   <IconFA>sitemap</IconFA>

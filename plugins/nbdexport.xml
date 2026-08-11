@@ -5,7 +5,7 @@
   <PluginAuthor>RifleJock</PluginAuthor>
   <Support>https://github.com/ibigsnet/NbdExport/issues</Support>
   <Project>https://github.com/ibigsnet/NbdExport</Project>
-  <Overview>Export a disk or partition as a Network Block Device (NBD) and image remote nbd:// targets to qcow2/raw. Settings → Network Services → NBD (next to NFS/SMB). Read-only by default; prefer private/Thunderbolt binds. Standalone — Thunderbolt Net optional for fast underlay.</Overview>
+  <Overview>Export a disk or partition as a Network Block Device (NBD) and image remote nbd:// targets to qcow2/raw. Settings → Network Services → NBD (next to NFS/SMB). Needs qemu-nbd/qemu-img (usually with Unraid VMs). Read-only by default; prefer private/Thunderbolt binds. Min Unraid 6.12 product — not a kernel feature. Thunderbolt Net optional for underlay.</Overview>
   <Category>Network:Management</Category>
   <ReadMe>https://raw.githubusercontent.com/ibigsnet/NbdExport/main/README.md</ReadMe>
   <IconFA>database</IconFA>
