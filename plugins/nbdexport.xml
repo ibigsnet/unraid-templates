@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Plugin>
+  <Name>NBD Export</Name>
+  <PluginURL>https://raw.githubusercontent.com/ibigsnet/NbdExport/main/nbdexport.plg</PluginURL>
+  <PluginAuthor>RifleJock</PluginAuthor>
+  <Support>https://github.com/ibigsnet/NbdExport/issues</Support>
+  <Project>https://github.com/ibigsnet/NbdExport</Project>
+  <Overview>Export a disk or partition as a Network Block Device (NBD) and image remote nbd:// targets to qcow2/raw. Settings → Network Services → NBD (next to NFS/SMB). Read-only by default; prefer private/Thunderbolt binds. Standalone — Thunderbolt Net optional for fast underlay.</Overview>
+  <Category>Network:Management</Category>
+  <ReadMe>https://raw.githubusercontent.com/ibigsnet/NbdExport/main/README.md</ReadMe>
+  <IconFA>database</IconFA>
+  <MinVer>6.12.0</MinVer>
+  <License>MIT</License>
+</Plugin>

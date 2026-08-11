@@ -7,6 +7,7 @@ RifleJock's Unraid Community Apps repository.
 - Storage Guard — free-space thresholds for array and pools; colors Main free bars and optional Unraid alerts.
 - Thunderbolt Net — host-to-host over TB3/4/5 and USB4/v2 (multi-peer tbn tabs, peers, services, honest trained rates; optional OpenFabric).
 - FRR (FRRouting) — optional FRR package/daemon manager for Unraid; standalone; pairs with Thunderbolt Net for multi-host OpenFabric.
+- NBD Export — Network Block Device export and imaging (Network Services → NBD); RO qemu-nbd, nbd:// → qcow2; optional Thunderbolt bind.
 
 Docker templates (Neos / Resonite headless) will return later.
 
