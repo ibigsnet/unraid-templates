@@ -9,7 +9,7 @@ Install from the **Apps** tab on Unraid (search author **RifleJock**, or each pl
 | **Storage Guard** | Free-space thresholds and Main free-bar coloring | [StorageGuard](https://github.com/ibigsnet/StorageGuard) |
 | **Thunderbolt Net** | Host-to-host networking over Thunderbolt / USB4 | [ThunderboltNet](https://github.com/ibigsnet/ThunderboltNet) |
 | **Fabric Routing** | Optional FRR packages (OpenFabric and friends) | [FabricRouting](https://github.com/ibigsnet/FabricRouting) |
-| **NBD Export** | Network block device export and imaging | [NbdExport](https://github.com/ibigsnet/NbdExport) |
+| **NBD Export** | Network block device export and imaging | [NBDExport](https://github.com/ibigsnet/NBDExport) |
 
 Docker templates may be added under `templates/` later.
 
