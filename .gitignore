@@ -4,3 +4,8 @@
 .kate-swp
 .idea/
 .vscode/
+
+# Local-only
+.grok-notes/
+*.local.md
+.private/

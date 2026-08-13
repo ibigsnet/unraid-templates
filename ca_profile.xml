@@ -1,17 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <CommunityApplications>
   <Profile>
-RifleJock's Unraid Community Apps repository.
-
-**Plugins**
-- Storage Guard — free-space thresholds for array and pools; colors Main free bars and optional Unraid alerts.
-- Thunderbolt Net — host-to-host over TB3/4/5 and USB4/v2 (multi-peer tbn tabs, peers, services, trained rate display; optional OpenFabric).
-- FRR (FRRouting) — optional FRR packages matched to Unraid product version; Settings → FRR; pairs with Thunderbolt Net OpenFabric policy.
-- NBD Export — Network Block Device export/imaging (Network Services → NBD); RO qemu-nbd; needs qemu tools; optional Thunderbolt bind.
-
-Docker templates (Neos / Resonite headless) will return later.
-
-Support: https://github.com/ibigsnet/unraid-templates
+RifleJock Unraid plugins: Storage Guard, Thunderbolt Net, Fabric Routing (FRR packages), and NBD Export.
+Support via each app Project and Support links. Source templates: github.com/ibigsnet/unraid-templates
   </Profile>
   <Icon>https://raw.githubusercontent.com/ibigsnet/unraid-templates/main/icon.png</Icon>
   <WebPage>https://github.com/ibigsnet/unraid-templates</WebPage>

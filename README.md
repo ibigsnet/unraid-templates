@@ -45,3 +45,18 @@ Portal: https://ca.unraid.net/submit
 
 - One XML file per Docker app under `templates/`
 - One XML wrapper per plugin under `plugins/`
+
+
+## Why an app is missing from Community Applications
+
+Layout here matches the [CA starter](https://github.com/unraid/unraid-community-apps-starter): `ca_profile.xml`, `plugins/*.xml`, optional `templates/`.
+
+Common reasons a plugin does not appear even though the XML is on GitHub:
+
+1. **PluginURL must match the `.plg` `pluginURL` entity exactly** (no extra `?v=`). CA documents this as required.
+2. **Invalid or exotic IconFA** — prefer Font Awesome **4.7** names (`shield`, `sitemap`, `database`).
+3. **Appfeed scan lag / rejection** — on Unraid open **Apps → Statistics** and check **Template Errors** / **Invalid Templates** and last feed time (~2 hours typical).
+4. **New plugins** can need a **Validate + Scan** pass at [ca.unraid.net/submit](https://ca.unraid.net/submit) (plugin entries are reviewed).
+5. Search by **Name** or **ExtraSearchTerms** (e.g. FRR, NBD), not only old Overview wording.
+
+Working pair for reference: Storage Guard and Thunderbolt Net (same `plugins/` layout).

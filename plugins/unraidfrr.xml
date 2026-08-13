@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Plugin>
-  <Name>Fabric Routing (FRR)</Name>
+  <Name>Fabric Routing</Name>
   <PluginURL>https://raw.githubusercontent.com/ibigsnet/UnraidFRR/main/unraidfrr.plg</PluginURL>
   <PluginAuthor>RifleJock</PluginAuthor>
   <Support>https://github.com/ibigsnet/UnraidFRR/issues</Support>
   <Project>https://github.com/ibigsnet/UnraidFRR</Project>
-  <Overview>Optional FRRouting packages for Unraid (zebra, fabricd/OpenFabric, optional OSPF/BGP). Catalog + flash cache on Apply; array start rehydrates packages already on flash. Settings → Network Settings → Fabric Routing. Standalone — Thunderbolt Net not required. Does not edit eth0/br0 by default. Pair with Thunderbolt Net for OpenFabric policy on the Thunderbolt underlay.</Overview>
+  <Overview>Optional FRRouting packages for Unraid (zebra, fabricd/OpenFabric, optional OSPF/BGP). Catalog plus flash cache on Apply; array start rehydrates packages already on flash. Settings, Network Settings, Fabric Routing. Standalone; Thunderbolt Net not required. Does not edit eth0/br0 by default. Pair with Thunderbolt Net for OpenFabric policy on the Thunderbolt underlay.</Overview>
   <Category>Network:Management</Category>
   <ReadMe>https://raw.githubusercontent.com/ibigsnet/UnraidFRR/main/README.md</ReadMe>
-  <IconFA>project-diagram</IconFA>
+  <ExtraSearchTerms>FRR FRRouting OpenFabric fabricd UnraidFRR routing</ExtraSearchTerms>
+  <IconFA>sitemap</IconFA>
   <MinVer>6.12.0</MinVer>
   <License>MIT</License>
 </Plugin>
