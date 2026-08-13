@@ -3,7 +3,6 @@
   <Name>Thunderbolt Net</Name>
   <PluginURL>https://raw.githubusercontent.com/ibigsnet/ThunderboltNet/main/thunderboltnet.plg</PluginURL>
   <PluginAuthor>RifleJock</PluginAuthor>
-  <!-- CA: Support = forum thread; Project = GitHub (both appear in support menu) -->
   <Support>https://forums.unraid.net/topic/200065-plugin-thunderbolt-net-host-to-host-networking-over-thunderbolt-345-and-usb44v2/</Support>
   <Project>https://github.com/ibigsnet/ThunderboltNet</Project>
   <Overview>Host-to-host networking over Thunderbolt 3/4/5 and USB4 / USB4 v2 wherever Linux exposes thunderbolt_net. Multi-peer tbn tabs, trained link rate and lane status, services on Thunderbolt IPs, known peers; optional OpenFabric when FRR is installed (Fabric Routing companion). Configure under Settings → Network Settings → Thunderbolt / tbnN.</Overview>
