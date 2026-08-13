@@ -11,5 +11,7 @@
   <ExtraSearchTerms>NBD qemu-nbd qemu-img block export imaging NbdExport</ExtraSearchTerms>
   <IconFA>database</IconFA>
   <MinVer>6.12.0</MinVer>
+  <DonateText>Support development</DonateText>
+  <DonateLink>https://www.paypal.com/paypalme/RifleJock</DonateLink>
   <License>MIT</License>
 </Plugin>

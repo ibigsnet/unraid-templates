@@ -11,5 +11,7 @@
   <ExtraSearchTerms>FRR FRRouting OpenFabric fabricd FabricRouting routing</ExtraSearchTerms>
   <IconFA>sitemap</IconFA>
   <MinVer>6.12.0</MinVer>
+  <DonateText>Support development</DonateText>
+  <DonateLink>https://www.paypal.com/paypalme/RifleJock</DonateLink>
   <License>MIT</License>
 </Plugin>

@@ -10,5 +10,7 @@
   <ReadMe>https://raw.githubusercontent.com/ibigsnet/StorageGuard/main/README.md</ReadMe>
   <IconFA>shield</IconFA>
   <MinVer>6.12.0</MinVer>
+  <DonateText>Support development</DonateText>
+  <DonateLink>https://www.paypal.com/paypalme/RifleJock</DonateLink>
   <License>MIT</License>
 </Plugin>
