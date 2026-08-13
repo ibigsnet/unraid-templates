@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Plugin>
   <Name>NBD Export</Name>
-  <PluginURL>https://raw.githubusercontent.com/ibigsnet/NbdExport/main/nbdexport.plg</PluginURL>
+  <PluginURL>https://raw.githubusercontent.com/ibigsnet/NbdExport/main/install.plg</PluginURL>
   <PluginAuthor>RifleJock</PluginAuthor>
   <Support>https://github.com/ibigsnet/NbdExport/issues</Support>
   <Project>https://github.com/ibigsnet/NbdExport</Project>
