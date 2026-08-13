@@ -17,7 +17,7 @@ GitHub redirects the old URL. Use **unraid-templates** for CA submit and new lin
 | App | Type | Notes |
 |-----|------|--------|
 | [Storage Guard](plugins/storageguard.xml) | Plugin | Source: [ibigsnet/StorageGuard](https://github.com/ibigsnet/StorageGuard) |
-| [Thunderbolt Net](plugins/thunderboltnet.xml) | Plugin | TB3/4/5 + USB4/v2 host-net — [ibigsnet/ThunderboltNet](https://github.com/ibigsnet/ThunderboltNet) |
+| [Thunderbolt Net](plugins/thunderboltnet.xml) | Plugin | Thunderbolt 3/4/5 + USB4/v2 host-net — [ibigsnet/ThunderboltNet](https://github.com/ibigsnet/ThunderboltNet) |
 | [Fabric Routing (FRR)](plugins/fabricrouting.xml) | Plugin | Optional FRR packages/daemons — [ibigsnet/FabricRouting](https://github.com/ibigsnet/FabricRouting); pairs with Thunderbolt Net for OpenFabric |
 | [NBD Export](plugins/nbdexport.xml) | Plugin | Block export/imaging — [ibigsnet/NbdExport](https://github.com/ibigsnet/NbdExport); Network Services → NBD |
 
