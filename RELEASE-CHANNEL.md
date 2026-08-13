@@ -78,3 +78,16 @@ https://raw.githubusercontent.com/ibigsnet/NbdExport/main/install.plg
 ## Existing installs that still point at old main URLs
 
 After the stable cutover, lab reinstall from main (this channel) is the cleanest reset.
+
+
+## Version calendar (fleet-wide — agents read this)
+
+Before any `<!ENTITY version>` bump:
+
+1. `date` on **lab Unraid** (TZ America/Chicago) — that `YYYY-MM-DD` is the only allowed date source.
+2. Same day as current version → next two-letter suffix only (`aa`→`ab`→…).
+3. **Never** invent tomorrow. **Never** set version from agent UTC if lab is still yesterday.
+4. If a future date was already shipped by mistake, continue that line (strcmp); do not rewind.
+5. Full rules: each plugin `RELEASES.md` + `.plg` header comment.
+
+Miss that caused `2026.08.14*` while lab was still **2026-08-13**: chained off an existing day-ahead TBN version without re-checking lab `date`.
