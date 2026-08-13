@@ -39,7 +39,7 @@ Portal: https://ca.unraid.net/submit
 | `plugins/` | Plugin wrappers (`PluginURL` → raw `.plg`) |
 | `templates/` | Docker application templates (empty for now; CA expects Docker XML here) |
 | `icon.png` | Repository icon |
-| `LICENSE` | MIT |
+| `LICENSE` | GPLv3 |
 
 ## Layout notes
 
@@ -60,3 +60,25 @@ Common reasons a plugin does not appear even though the XML is on GitHub:
 5. Search by **Name** or **ExtraSearchTerms** (e.g. FRR, NBD), not only old Overview wording.
 
 Working pair for reference: Storage Guard and Thunderbolt Net (same `plugins/` layout).
+
+6. **Wrong branch** — production PluginURL must be `stable` (exact match to `.plg` entity), not a half-finished `main` tree.
+
+
+## License
+
+GNU GPLv3 or later — copyright **ibigs, LLC** (Author: RifleJock). See [LICENSE](LICENSE).
+
+## Release channel (`stable`)
+
+CA PluginURLs point at each plugin's GitHub **`stable`** branch, not `main`.
+
+| Plugin | PluginURL |
+|--------|-----------|
+| Storage Guard | `…/StorageGuard/stable/storageguard.plg` |
+| Thunderbolt Net | `…/ThunderboltNet/stable/thunderboltnet.plg` |
+| Fabric Routing | `…/FabricRouting/stable/fabricrouting.plg` |
+| NBD Export | `…/NbdExport/stable/install.plg` |
+
+Policy: [RELEASE-CHANNEL.md](RELEASE-CHANNEL.md). Develop on `main` in each plugin repo; ship by merging to `stable`.
+
+Security / review notes live in each plugin's `SECURITY.md`.

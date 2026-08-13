@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Plugin>
   <Name>Fabric Routing</Name>
-  <PluginURL>https://raw.githubusercontent.com/ibigsnet/FabricRouting/main/fabricrouting.plg</PluginURL>
+  <PluginURL>https://raw.githubusercontent.com/ibigsnet/FabricRouting/stable/fabricrouting.plg</PluginURL>
   <PluginAuthor>RifleJock</PluginAuthor>
   <Support>https://github.com/ibigsnet/FabricRouting/issues</Support>
   <Project>https://github.com/ibigsnet/FabricRouting</Project>
@@ -13,5 +13,5 @@
   <MinVer>6.12.0</MinVer>
   <DonateText>Support development</DonateText>
   <DonateLink>https://www.paypal.com/paypalme/RifleJock</DonateLink>
-  <License>MIT</License>
+  <License>GPLv3</License>
 </Plugin>

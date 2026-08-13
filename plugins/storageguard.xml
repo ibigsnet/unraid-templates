@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Plugin>
   <Name>Storage Guard</Name>
-  <PluginURL>https://raw.githubusercontent.com/ibigsnet/StorageGuard/main/storageguard.plg</PluginURL>
+  <PluginURL>https://raw.githubusercontent.com/ibigsnet/StorageGuard/stable/storageguard.plg</PluginURL>
   <PluginAuthor>RifleJock</PluginAuthor>
   <Support>https://forums.unraid.net/topic/199796-plugin-storage-guard-free-space-thresholds-so-you-know-if-a-failed-disk-still-leaves-room-to-move-data/</Support>
   <Project>https://github.com/ibigsnet/StorageGuard</Project>
@@ -12,5 +12,5 @@
   <MinVer>6.12.0</MinVer>
   <DonateText>Support development</DonateText>
   <DonateLink>https://www.paypal.com/paypalme/RifleJock</DonateLink>
-  <License>MIT</License>
+  <License>GPLv3</License>
 </Plugin>

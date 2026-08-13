@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Plugin>
   <Name>Thunderbolt Net</Name>
-  <PluginURL>https://raw.githubusercontent.com/ibigsnet/ThunderboltNet/main/thunderboltnet.plg</PluginURL>
+  <PluginURL>https://raw.githubusercontent.com/ibigsnet/ThunderboltNet/stable/thunderboltnet.plg</PluginURL>
   <PluginAuthor>RifleJock</PluginAuthor>
   <Support>https://forums.unraid.net/topic/200065-plugin-thunderbolt-net-host-to-host-networking-over-thunderbolt-345-and-usb44v2/</Support>
   <Project>https://github.com/ibigsnet/ThunderboltNet</Project>
@@ -12,5 +12,5 @@
   <MinVer>6.12.0</MinVer>
   <DonateText>Support development</DonateText>
   <DonateLink>https://www.paypal.com/paypalme/RifleJock</DonateLink>
-  <License>MIT</License>
+  <License>GPLv3</License>
 </Plugin>
