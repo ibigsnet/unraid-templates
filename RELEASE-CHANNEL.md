@@ -2,48 +2,79 @@
 
 ## Branches
 
-| Branch | Purpose |
-|--------|---------|
-| `main` (each plugin repo) | Active development. May be broken. Not what CA should install. |
-| `stable` (each plugin repo) | Production channel for Community Applications and end users. |
+| Branch | Purpose | PluginURL / raw |
+|--------|---------|-----------------|
+| `main` | Lab + active development | `…/main/…` |
+| `stable` | CA / end users / production | `…/stable/…` |
 
 ## PluginURL rule
 
-Every shipped `.plg` must set:
+**On the branch that is checked out / shipped, entities must match that branch:**
 
-- `pluginURL` → `https://raw.githubusercontent.com/ibigsnet/<Repo>/stable/<file>.plg`
-- `raw` → `https://raw.githubusercontent.com/ibigsnet/<Repo>/stable`
+```xml
+<!-- on main -->
+<!ENTITY pluginURL "https://raw.githubusercontent.com/ibigsnet/REPO/main/FILE.plg">
+<!ENTITY raw "https://raw.githubusercontent.com/ibigsnet/REPO/main">
 
-CA wrappers in `plugins/*.xml` must use the **same** PluginURL string (exact match).
+<!-- on stable -->
+<!ENTITY pluginURL "https://raw.githubusercontent.com/ibigsnet/REPO/stable/FILE.plg">
+<!ENTITY raw "https://raw.githubusercontent.com/ibigsnet/REPO/stable">
+```
 
-## Ship checklist
+CA wrappers in `unraid-templates` always use **stable** PluginURLs.
 
-1. Finish and test on `main` (lab install from main only if you temporarily need it).
-2. Merge or cherry-pick the release commit(s) to `stable`.
-3. Confirm version entity sorts after the previous ship (`YYYY.MM.DD` + two-letter suffix).
-4. Push `stable` (and `main`).
-5. Confirm raw URLs 200 and PluginURL entity matches CA XML.
-6. After feed update, search CA for the app.
+## Lab workflow (preferred for our plugins)
 
-## License
+1. **Uninstall** from Unraid (Plugins → Remove), not only “Update”.
+2. **Sanity check** leftovers (paths below).
+3. **Install from main** raw URL (lab only).
+4. Test. Document concerns in private `.grok-notes/` or a lab log.
+5. When ready to ship: merge to `stable`, rewrite entities to `stable`, bump version, push `stable`.
 
-Plugin templates and wrappers: **GPL-3.0-or-later**, copyright **ibigs, LLC** (Author: RifleJock).
+### Why uninstall → reinstall for lab (not only Update)
 
-GPLv3 is standard for Unraid plugins and is **not** a Community Applications blocker.
+| Path | Pros | Cons |
+|------|------|------|
+| Update plugin | Fast | Skips full remove; can hide uninstall bugs, stale files, dual plg names |
+| Uninstall → install | Exercises remove + cold install | Brief feature gap; need leftover checklist |
 
-## Existing installs that still point at `main`
+**Lab default: uninstall → sanity → install from `main`.**  
+**Production/CA users: stay on Update from `stable`.**
 
-Older Storage Guard / Thunderbolt Net installs used PluginURL on `main`. Version **2026.08.14aa** on `main` migrates them: after that update, the installed `.plg` has PluginURL=`stable` and future updates come only from `stable`.
+### Leftover checklist (after uninstall)
 
-## Development discipline (avoid shipping WIP)
+```bash
+# emhttp
+ls -la /usr/local/emhttp/plugins/ | grep -iE 'storageguard|thunderbolt|fabric|nbd|unraidfrr'
+# flash
+ls -la /boot/config/plugins/ | grep -iE 'storageguard|thunderbolt|fabric|nbd|unraidfrr|tbn-'
+# plg registry
+ls /boot/config/plugins/*.plg /var/log/plugins/*.plg 2>/dev/null | grep -iE 'storage|thunder|fabric|nbd|unraidfrr|tbn-'
+# FRR packages (only if Fabric Routing was installed)
+ls /var/log/packages/ 2>/dev/null | grep -iE 'frr|libyang' || true
+# NBD runtime
+ls /var/run/nbdexport 2>/dev/null; pgrep -a qemu-nbd || true
+# StorageGuard inject
+grep -n storageguard /usr/local/emhttp/webGui/include/DefaultPageLayout/HeadInlineJS.php 2>/dev/null || echo "SG inject: clean"
+```
 
-On `main`, keep `pluginURL` and `raw` pointed at **`stable`** (already set). That way even a stale bookmark to a `main` `.plg` URL still installs **stable** files.
+### Lab install URLs (main)
 
-When developing:
+```text
+https://raw.githubusercontent.com/ibigsnet/StorageGuard/main/storageguard.plg
+https://raw.githubusercontent.com/ibigsnet/ThunderboltNet/main/thunderboltnet.plg
+https://raw.githubusercontent.com/ibigsnet/FabricRouting/main/fabricrouting.plg
+https://raw.githubusercontent.com/ibigsnet/NbdExport/main/install.plg
+```
 
-1. Change code on `main` freely.
-2. **Do not bump** the `.plg` version entity until you are ready to ship.
-3. To lab-test unreleased code, temporarily point `raw` at `main` on a private build, or copy files by hand — do not push a higher version on `main` than on `stable` unless you are shipping.
-4. Ship: bump version → commit → merge/push `main` → fast-forward `stable` to the same commit → push `stable`.
+## Ship checklist (production)
 
-Never leave `stable` behind a higher version number that only exists on `main`.
+1. Tested on lab via main uninstall/reinstall path.
+2. Bump version; rewrite `pluginURL` + `raw` (+ FRR catalog) to **stable**.
+3. Merge/push `main`, fast-forward `stable`, push `stable`.
+4. Confirm CA XML PluginURL matches stable entity.
+5. Do **not** leave a higher version only on main.
+
+## Existing installs that still point at old main URLs
+
+After the stable cutover, lab reinstall from main (this channel) is the cleanest reset.
