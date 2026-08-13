@@ -1,93 +1,28 @@
-# Release channel policy
+# Release channel
 
-## Branches
+| Branch (plugin repos) | Role | PluginURL / `raw` |
+|----------------------|------|-------------------|
+| `main` | Development / lab | `…/main/…` |
+| `stable` | CA / end users | `…/stable/…` |
 
-| Branch | Purpose | PluginURL / raw |
-|--------|---------|-----------------|
-| `main` | Lab + active development | `…/main/…` |
-| `stable` | CA / end users / production | `…/stable/…` |
+This repo’s `plugins/*.xml` always use **stable** PluginURLs.
 
-## PluginURL rule
+## Ship (production)
 
-**On the branch that is checked out / shipped, entities must match that branch:**
+1. Test on lab from `main`.
+2. Bump version; set `pluginURL` + `raw` (+ FRR catalog if needed) to **stable**.
+3. Push `main`, fast-forward and push `stable`.
+4. Confirm CA XML `PluginURL` matches the stable `.plg` entity.
 
-```xml
-<!-- on main -->
-<!ENTITY pluginURL "https://raw.githubusercontent.com/ibigsnet/REPO/main/FILE.plg">
-<!ENTITY raw "https://raw.githubusercontent.com/ibigsnet/REPO/main">
+Do not leave a higher version only on `main`.
 
-<!-- on stable -->
-<!ENTITY pluginURL "https://raw.githubusercontent.com/ibigsnet/REPO/stable/FILE.plg">
-<!ENTITY raw "https://raw.githubusercontent.com/ibigsnet/REPO/stable">
-```
+## Lab
 
-CA wrappers in `unraid-templates` always use **stable** PluginURLs.
+Prefer uninstall → install from `main` raw URLs when exercising cold install/remove.  
+CA users stay on **Update** from `stable`.
 
-## Lab workflow (preferred for our plugins)
+## Version dates
 
-1. **Uninstall** from Unraid (Plugins → Remove), not only “Update”.
-2. **Sanity check** leftovers (paths below).
-3. **Install from main** raw URL (lab only).
-4. Test. Document concerns in private `.grok-notes/` or a lab log.
-5. When ready to ship: merge to `stable`, rewrite entities to `stable`, bump version, push `stable`.
-
-### Why uninstall → reinstall for lab (not only Update)
-
-| Path | Pros | Cons |
-|------|------|------|
-| Update plugin | Fast | Skips full remove; can hide uninstall bugs, stale files, dual plg names |
-| Uninstall → install | Exercises remove + cold install | Brief feature gap; need leftover checklist |
-
-**Lab default: uninstall → sanity → install from `main`.**  
-**Production/CA users: stay on Update from `stable`.**
-
-### Leftover checklist (after uninstall)
-
-```bash
-# emhttp
-ls -la /usr/local/emhttp/plugins/ | grep -iE 'storageguard|thunderbolt|fabric|nbd|unraidfrr'
-# flash
-ls -la /boot/config/plugins/ | grep -iE 'storageguard|thunderbolt|fabric|nbd|unraidfrr|tbn-'
-# plg registry
-ls /boot/config/plugins/*.plg /var/log/plugins/*.plg 2>/dev/null | grep -iE 'storage|thunder|fabric|nbd|unraidfrr|tbn-'
-# FRR packages (only if Fabric Routing was installed)
-ls /var/log/packages/ 2>/dev/null | grep -iE 'frr|libyang' || true
-# NBD runtime
-ls /var/run/nbdexport 2>/dev/null; pgrep -a qemu-nbd || true
-# StorageGuard inject
-grep -n storageguard /usr/local/emhttp/webGui/include/DefaultPageLayout/HeadInlineJS.php 2>/dev/null || echo "SG inject: clean"
-```
-
-### Lab install URLs (main)
-
-```text
-https://raw.githubusercontent.com/ibigsnet/StorageGuard/main/storageguard.plg
-https://raw.githubusercontent.com/ibigsnet/ThunderboltNet/main/thunderboltnet.plg
-https://raw.githubusercontent.com/ibigsnet/FabricRouting/main/fabricrouting.plg
-https://raw.githubusercontent.com/ibigsnet/NbdExport/main/install.plg
-```
-
-## Ship checklist (production)
-
-1. Tested on lab via main uninstall/reinstall path.
-2. Bump version; rewrite `pluginURL` + `raw` (+ FRR catalog) to **stable**.
-3. Merge/push `main`, fast-forward `stable`, push `stable`.
-4. Confirm CA XML PluginURL matches stable entity.
-5. Do **not** leave a higher version only on main.
-
-## Existing installs that still point at old main URLs
-
-After the stable cutover, lab reinstall from main (this channel) is the cleanest reset.
-
-
-## Version calendar (fleet-wide — agents read this)
-
-Before any `<!ENTITY version>` bump:
-
-1. `date` on **lab Unraid** (TZ America/Chicago) — that `YYYY-MM-DD` is the only allowed date source.
-2. Same day as current version → next two-letter suffix only (`aa`→`ab`→…).
-3. **Never** invent tomorrow. **Never** set version from agent UTC if lab is still yesterday.
-4. If a future date was already shipped by mistake, continue that line (strcmp); do not rewind.
-5. Full rules: each plugin `RELEASES.md` + `.plg` header comment.
-
-Miss that caused `2026.08.14*` while lab was still **2026-08-13**: chained off an existing day-ahead TBN version without re-checking lab `date`.
+Use the lab wall-clock date (America/Chicago) for `YYYY.MM.DD` versions.  
+Same day → two-letter suffixes (`aa`, `ab`, …). Do not invent tomorrow.  
+Full rules: each plugin `RELEASES.md`.
