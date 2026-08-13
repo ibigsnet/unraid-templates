@@ -1,17 +1,20 @@
-# Release channel
+# Maintainer notes (not user-facing)
+
+CA submit: https://ca.unraid.net/submit — repo  
+`https://github.com/ibigsnet/unraid-templates`
+
+| Path | Role |
+|------|------|
+| `ca_profile.xml` | CA profile |
+| `plugins/*.xml` | Plugin wrappers; `PluginURL` → raw `.plg` on **stable** |
+| `templates/` | Docker XMLs (empty) |
+
+`PluginURL` must exactly match each plugin’s stable `.plg` `pluginURL` entity.
 
 | Branch (plugin repos) | Role |
 |----------------------|------|
-| `main` | Development / lab |
+| `main` | Lab / development |
 | `stable` | CA / production |
 
-This repo’s `plugins/*.xml` use **stable** PluginURLs only.  
-`PluginURL` must match the `.plg` `pluginURL` entity exactly.
-
-## Ship
-
-1. Test from `main` on lab.
-2. Bump version; point `pluginURL` / `raw` at **stable**.
-3. Push `main` and fast-forward `stable`.
-
-Version rules: each plugin `RELEASES.md` (fleet `YYYY.MM.DD` + two-letter suffixes).
+Ship: test on `main` → point entities at `stable` → push `main` + `stable`.  
+Version rules: each plugin `RELEASES.md`.
