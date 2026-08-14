@@ -13,6 +13,8 @@ Install from the **Apps** tab on Unraid (search author **RifleJock**, or each pl
 
 Docker templates may be added under `templates/` later.
 
+This repository uses a single branch: **`main`**. Community Applications reads the catalog XMLs from here. Each plugin’s **install** URL (`PluginURL` in `plugins/*.xml`) points at that plugin’s **`stable`** branch on GitHub — not at a `stable` branch of this templates repo.
+
 ## Support
 
 - Unraid forum threads linked from each plugin (where available)
