@@ -1,11 +1,13 @@
+# Editor / OS
 .DS_Store
 *~
 *.swp
 .kate-swp
 .idea/
 .vscode/
+.cursor/
 
-# Local-only
-.grok-notes/
+# Local scratch files
 *.local.md
+NOTES.local.md
 .private/
