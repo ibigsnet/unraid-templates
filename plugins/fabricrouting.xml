@@ -10,7 +10,7 @@
   <ReadMe>https://raw.githubusercontent.com/ibigsnet/FabricRouting/stable/README.md</ReadMe>
   <ExtraSearchTerms>FRR FRRouting OpenFabric fabricd FabricRouting UnraidFRR routing zebra</ExtraSearchTerms>
   <Icon>https://raw.githubusercontent.com/ibigsnet/FabricRouting/stable/icon.png</Icon>
-  <IconFA>project-diagram</IconFA>
+  <IconFA>share-alt</IconFA>
   <MinVer>6.12.0</MinVer>
   <DonateText>Support development</DonateText>
   <DonateLink>https://www.paypal.com/paypalme/RifleJock</DonateLink>
