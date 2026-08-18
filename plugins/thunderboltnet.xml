@@ -9,7 +9,8 @@
   <Category>Network:Management</Category>
   <ReadMe>https://raw.githubusercontent.com/ibigsnet/ThunderboltNet/stable/README.md</ReadMe>
   <ExtraSearchTerms>Thunderbolt ThunderboltNet USB4 tbn host-net OpenFabric CA-stable</ExtraSearchTerms>
-  <IconFA>sitemap</IconFA>
+  <Icon>https://raw.githubusercontent.com/ibigsnet/ThunderboltNet/stable/icon.png</Icon>
+  <IconFA>bolt</IconFA>
   <MinVer>6.12.0</MinVer>
   <DonateText>Support development</DonateText>
   <DonateLink>https://www.paypal.com/paypalme/RifleJock</DonateLink>
