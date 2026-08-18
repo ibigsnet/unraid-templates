@@ -8,7 +8,7 @@
   <Overview>Export a disk or partition as a Network Block Device and image remote nbd:// targets to qcow2 or raw. Settings → Network Services → NBD (next to NFS and SMB). Needs qemu-nbd and qemu-img (usually with Unraid VMs). Read-only by default; Destructive mode off; no bind-all unless enabled. Prefer private or Thunderbolt binds. Thunderbolt Net optional for underlay. Security notes: https://raw.githubusercontent.com/ibigsnet/NBDExport/stable/SECURITY.md</Overview>
   <Category>Network:Management</Category>
   <ReadMe>https://raw.githubusercontent.com/ibigsnet/NBDExport/stable/README.md</ReadMe>
-  <ExtraSearchTerms>NBD NBDExport qemu-nbd qemu-img block export imaging NbdExport nbdexport</ExtraSearchTerms>
+  <ExtraSearchTerms>NBD NBDExport qemu-nbd qemu-img block export imaging NbdExport nbdexport feed-nudge-20260818</ExtraSearchTerms>
   <IconFA>database</IconFA>
   <MinVer>6.12.0</MinVer>
   <DonateText>Support development</DonateText>

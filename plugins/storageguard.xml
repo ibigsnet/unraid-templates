@@ -8,7 +8,7 @@
   <Overview>Free-space thresholds for your array and pools. Colors free bars on Main (yellow/red) and optional Unraid alerts so you know before a drive fails whether you still have room to move data or rebalance.</Overview>
   <Category>Tools:Utilities</Category>
   <ReadMe>https://raw.githubusercontent.com/ibigsnet/StorageGuard/stable/README.md</ReadMe>
-  <ExtraSearchTerms>StorageGuard free space threshold disk alert CA-stable</ExtraSearchTerms>
+  <ExtraSearchTerms>StorageGuard free space threshold disk alert CA-stable feed-nudge-20260818</ExtraSearchTerms>
   <IconFA>shield</IconFA>
   <MinVer>6.12.0</MinVer>
   <DonateText>Support development</DonateText>
