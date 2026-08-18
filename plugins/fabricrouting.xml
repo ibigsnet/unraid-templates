@@ -3,9 +3,9 @@
   <Name>Fabric Routing</Name>
   <PluginURL>https://raw.githubusercontent.com/ibigsnet/FabricRouting/stable/fabricrouting.plg</PluginURL>
   <PluginAuthor>RifleJock</PluginAuthor>
-  <Support>https://github.com/ibigsnet/FabricRouting/issues</Support>
+  <Support>https://forums.unraid.net/topic/200065-plugin-thunderbolt-net-host-to-host-networking-over-thunderbolt-345-and-usb44v2/</Support>
   <Project>https://github.com/ibigsnet/FabricRouting</Project>
-  <Overview>Optional FRRouting packages for Unraid hosts (zebra, fabricd/OpenFabric, optional OSPF/BGP). Settings → Network Settings → Fabric Routing: pick Latest/Previous/Flash and Download and Install packages (progress window until DONE). Array start rehydrates packages already on flash. Standalone; Thunderbolt Net not required. Does not edit eth0/br0 by default. Pair with Thunderbolt Net for OpenFabric policy on the Thunderbolt underlay.</Overview>
+  <Overview>WIP — FRRouting packages for Unraid (zebra, fabricd/OpenFabric). Primary focus: pairing with Thunderbolt Net for OpenFabric on the Thunderbolt underlay. Settings → Network Settings → Fabric Routing: Download and Install packages. Does not change eth0/br0 by default. Broader Ethernet fabric support later. Support: Thunderbolt Net forum thread for now.</Overview>
   <Category>Network:Management</Category>
   <ReadMe>https://raw.githubusercontent.com/ibigsnet/FabricRouting/stable/README.md</ReadMe>
   <ExtraSearchTerms>FRR FRRouting OpenFabric fabricd FabricRouting UnraidFRR routing zebra</ExtraSearchTerms>
