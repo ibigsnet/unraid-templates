@@ -8,7 +8,7 @@
   <Overview>WIP — FRRouting packages for Unraid (zebra, fabricd/OpenFabric). Primary focus: pairing with Thunderbolt Net for OpenFabric on the Thunderbolt underlay. Settings → Network Settings → Fabric Routing: Download and Install packages. Does not change eth0/br0 by default. Broader Ethernet fabric support later. Support: Thunderbolt Net forum thread (Support link). Bugs: GitHub Issues (Project link).</Overview>
   <Category>Network:Management</Category>
   <ReadMe>https://raw.githubusercontent.com/ibigsnet/FabricRouting/stable/README.md</ReadMe>
-  <ExtraSearchTerms>FRR FRRouting OpenFabric fabricd FabricRouting UnraidFRR routing zebra feed-nudge-20260818</ExtraSearchTerms>
+  <ExtraSearchTerms>FRR FRRouting OpenFabric fabricd FabricRouting UnraidFRR routing zebra feed-nudge-20260819</ExtraSearchTerms>
   <IconFA>share-alt</IconFA>
   <MinVer>6.12.0</MinVer>
   <DonateText>Support development</DonateText>

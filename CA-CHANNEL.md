@@ -11,4 +11,4 @@ CA AppFeed scrapes this repo. **Details → Repository** is the feed’s copy of
 
 Installed flash `.plg` `pluginURL` is separate: Unraid **Update** follows flash, not the catalog. Lab (NIROG) may stay on `/main/`; CA/production boxes should reinstall from the stable URL if flash is locked to main.
 
-Production freeze (Thunderbolt Net): **2026.08.17an** until an explicit stable promote.
+Production freeze lifted 2026-08-19: Thunderbolt Net stable tip **2026.08.18ar** (explicit promote).
