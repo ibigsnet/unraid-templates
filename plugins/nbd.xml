@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Plugin>
   <Name>NBD Export</Name>
-  <PluginURL>https://raw.githubusercontent.com/ibigsnet/NBDExport/stable/nbd.plg</PluginURL>
+  <PluginURL>https://raw.githubusercontent.com/ibigsnet/NBDExport/main/nbd.plg</PluginURL>
   <PluginAuthor>RifleJock</PluginAuthor>
   <Support>https://forums.unraid.net/topic/200219-plugin-nbd-export-host-disks-over-network-block-device-image-to-qcow2raw/</Support>
   <Project>https://github.com/ibigsnet/NBDExport</Project>
-  <Overview>Export a disk or partition as a Network Block Device and image remote nbd:// targets to qcow2 or raw. Settings → Network Services → NBD (next to NFS and SMB). Needs qemu-nbd and qemu-img (usually with Unraid VMs). Read-only by default; Destructive mode off; no bind-all unless enabled. Prefer private or Thunderbolt binds. Thunderbolt Net optional for underlay. Security notes: https://raw.githubusercontent.com/ibigsnet/NBDExport/stable/SECURITY.md</Overview>
+  <Overview>Export a disk or partition as a Network Block Device and image remote nbd:// targets to qcow2 or raw. Settings → Network Services → NBD (next to NFS and SMB). Needs qemu-nbd and qemu-img (usually with Unraid VMs). Read-only by default; Destructive mode off; no bind-all unless enabled. Prefer private or Thunderbolt binds. Thunderbolt Net optional for underlay. Security notes: https://raw.githubusercontent.com/ibigsnet/NBDExport/main/SECURITY.md</Overview>
   <Category>Network:Management</Category>
-  <ReadMe>https://raw.githubusercontent.com/ibigsnet/NBDExport/stable/README.md</ReadMe>
-  <ExtraSearchTerms>NBD NBDExport qemu-nbd qemu-img block export imaging NbdExport nbdexport feed-nudge-20260819</ExtraSearchTerms>
+  <ReadMe>https://raw.githubusercontent.com/ibigsnet/NBDExport/main/README.md</ReadMe>
+  <ExtraSearchTerms>NBD NBDExport qemu-nbd qemu-img block export imaging NbdExport nbdexport feed-nudge-20260820</ExtraSearchTerms>
   <IconFA>database</IconFA>
   <MinVer>6.12.0</MinVer>
   <DonateText>Support development</DonateText>
