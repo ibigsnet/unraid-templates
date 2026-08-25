@@ -2,7 +2,7 @@
 <CommunityApplications>
   <Profile>
 RifleJock Unraid plugins: Storage Guard, Thunderbolt Net, Fabric Routing (FRR packages), and NBD Export.
-Each PluginURL targets that project's stable branch (CA / production). Catalog source: github.com/ibigsnet/unraid-templates (main).
+Each PluginURL targets that project's main branch (CA / production). Catalog source: github.com/ibigsnet/unraid-templates (main).
 Lab testing of unreleased builds: install from each project's main raw .plg manually — never via CA.
 Support via each app Project and Support links.
   </Profile>
