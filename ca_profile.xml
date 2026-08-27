@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CommunityApplications>
+  <Profile>
+RifleJock Unraid plugins: Storage Guard, Thunderbolt Net, Fabric Routing, and NBD Export.
+  </Profile>
+  <Icon>https://raw.githubusercontent.com/ibigsnet/unraid-templates/main/icon.png</Icon>
+  <WebPage>https://github.com/ibigsnet/unraid-templates</WebPage>
+  <Forum>https://forums.unraid.net/topic/200065-plugin-thunderbolt-net-host-to-host-networking-over-thunderbolt-345-and-usb44v2/</Forum>
+  <DonateLink>https://www.paypal.com/paypalme/RifleJock</DonateLink>
+  <DonateText>Support development</DonateText>
+</CommunityApplications>

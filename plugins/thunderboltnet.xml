@@ -8,7 +8,7 @@
   <Overview>Host-to-host networking over Thunderbolt 3/4/5 and USB4 / USB4 v2 wherever Linux exposes thunderbolt_net. Multi-peer tbn tabs, trained link rate and lane status, services on Thunderbolt IPs, known peers; optional OpenFabric when FRR is installed (Fabric Routing companion). Configure under Settings → Network Settings → Thunderbolt / tbnN. Support: Unraid forum thread (Support link). Bugs and feature requests: GitHub Issues (Project link).</Overview>
   <Category>Network:Management</Category>
   <ReadMe>https://raw.githubusercontent.com/ibigsnet/ThunderboltNet/main/README.md</ReadMe>
-  <ExtraSearchTerms>Thunderbolt ThunderboltNet USB4 tbn host-net OpenFabric CA-stable feed-nudge-20260827</ExtraSearchTerms>
+  <ExtraSearchTerms>Thunderbolt ThunderboltNet USB4 tbn host-net OpenFabric feed-nudge-20260827</ExtraSearchTerms>
   <Icon>https://raw.githubusercontent.com/ibigsnet/ThunderboltNet/main/icon.png</Icon>
   <IconFA>bolt</IconFA>
   <MinVer>6.12.0</MinVer>
