@@ -17,6 +17,8 @@ All `plugins/*.xml` **PluginURL** values must use each project’s **`main`** br
 
 CA AppFeed scrapes this repo. If Details → Repository still shows an old branch, bump `ExtraSearchTerms` (feed-nudge), push, wait for Squid’s scraper, then CA **Force Update**.
 
+Squid’s registered URL in [Repositories.json](https://github.com/Squidly271/Community-Applications-Moderators/blob/master/Repositories.json) must be `https://github.com/ibigsnet/unraid-templates`. The old name `https://github.com/ibigsnet/unraid-docker-templates` still 301s on GitHub, but his persistent clone can stay on the pre-rename tree (`neos-headless.xml` only) and the four plugins drop out of CA. Fix is Squid updating that URL (new clone path) and deleting `/tmp/GitHub/repositoryClone/ibigsnet/unraid-docker-templates`. A feed-nudge alone will not unstick that clone.
+
 Installed flash `.plg` `pluginURL` is separate: Unraid **Update** follows flash, not the catalog.
 - CA / production boxes: install from **main**
 - Lab NIROG: install from **testing** raw URL so Update stays on the WIP loop
