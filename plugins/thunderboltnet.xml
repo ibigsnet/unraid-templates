@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Containers>
-  <Plugin>True</Plugin>
+<Plugin>
   <Name>Thunderbolt Net</Name>
   <PluginURL>https://raw.githubusercontent.com/ibigsnet/ThunderboltNet/main/thunderboltnet.plg</PluginURL>
   <PluginAuthor>RifleJock</PluginAuthor>
@@ -16,4 +15,4 @@
   <DonateText>Support development</DonateText>
   <DonateLink>https://www.paypal.com/paypalme/RifleJock</DonateLink>
   <License>GPLv3</License>
-</Containers>
+</Plugin>
