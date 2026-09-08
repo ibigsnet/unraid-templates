@@ -5,7 +5,7 @@
   <PluginAuthor>RifleJock</PluginAuthor>
   <Support>https://forums.unraid.net/topic/200219-plugin-nbd-export-host-disks-over-network-block-device-image-to-qcow2raw/</Support>
   <Project>https://github.com/ibigsnet/NBDExport</Project>
-  <Overview>Host disks over NBD, pull remote nbd:// targets, or convert a local /dev disk or file to qcow2/raw under /mnt. Settings → Network Services → NBD. Read-only Host by default; prefer private bind. While Host is up a beacon listens on TCP 10808 (not the Unraid login). Pull can scan private subnets for peers. Status lists plugin and external qemu-img jobs.</Overview>
+  <Overview>Host disks over NBD, pull remote nbd:// targets, or convert a local /dev disk or file to qcow2/raw under /mnt. Settings → Network Services → NBD. Read-only Host by default; prefer private bind. While Host is up a beacon may listen on TCP 10808 (private clients only; not the Unraid login). Pull → Scan network is a button (POST): you pick which private LAN(s) to probe; default is plugin beacons on 10808, optional NBD ports. Status lists plugin and external qemu-img jobs.</Overview>
   <Description>Host disks over NBD, pull remote nbd:// targets, or convert a local /dev disk or file to qcow2/raw under /mnt. Settings → Network Services → NBD. Read-only Host by default; prefer private bind. Status lists plugin and external qemu-img jobs.</Description>
   <Category>Network:Management</Category>
   <ReadMe>https://raw.githubusercontent.com/ibigsnet/NBDExport/main/README.md</ReadMe>
