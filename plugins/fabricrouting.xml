@@ -2,6 +2,7 @@
 <Plugin>
   <Name>Fabric Routing</Name>
   <PluginURL>https://raw.githubusercontent.com/ibigsnet/FabricRouting/main/fabricrouting.plg</PluginURL>
+  <TemplateURL>https://raw.githubusercontent.com/ibigsnet/unraid-templates/main/plugins/fabricrouting.xml</TemplateURL>
   <PluginAuthor>RifleJock</PluginAuthor>
   <Support>https://forums.unraid.net/topic/200065-plugin-thunderbolt-net-host-to-host-networking-over-thunderbolt-345-and-usb44v2/</Support>
   <Project>https://github.com/ibigsnet/FabricRouting</Project>
@@ -9,7 +10,7 @@
   <Description>FRRouting packages for Unraid (zebra, fabricd/OpenFabric). Pair with Thunderbolt Net for OpenFabric on the Thunderbolt underlay. Settings → Network Settings → Fabric Routing: Download and Install packages. Does not change eth0/br0 by default.</Description>
   <Category>Network:Management</Category>
   <ReadMe>https://raw.githubusercontent.com/ibigsnet/FabricRouting/main/README.md</ReadMe>
-  <ExtraSearchTerms>FRR FRRouting OpenFabric fabricd FabricRouting UnraidFRR routing zebra feed-nudge-20260831</ExtraSearchTerms>
+  <ExtraSearchTerms>FRR FRRouting OpenFabric fabricd FabricRouting UnraidFRR routing zebra feed-nudge-20260913</ExtraSearchTerms>
   <IconFA>share-alt</IconFA>
   <MinVer>6.12.0</MinVer>
   <DonateText>Support development</DonateText>

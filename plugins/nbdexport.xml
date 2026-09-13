@@ -2,6 +2,7 @@
 <Plugin>
   <Name>NBD Export</Name>
   <PluginURL>https://raw.githubusercontent.com/ibigsnet/NBDExport/main/nbd.plg</PluginURL>
+  <TemplateURL>https://raw.githubusercontent.com/ibigsnet/unraid-templates/main/plugins/nbdexport.xml</TemplateURL>
   <PluginAuthor>RifleJock</PluginAuthor>
   <Support>https://forums.unraid.net/topic/200219-plugin-nbd-export-host-disks-over-network-block-device-image-to-qcow2raw/</Support>
   <Project>https://github.com/ibigsnet/NBDExport</Project>
@@ -9,7 +10,7 @@
   <Description>Host disks over NBD, pull remote nbd:// targets, or convert a local /dev disk or file to qcow2/raw under /mnt. Settings → Network Services → NBD. Read-only Host by default; prefer private bind. Status lists plugin and external qemu-img jobs.</Description>
   <Category>Network:Management</Category>
   <ReadMe>https://raw.githubusercontent.com/ibigsnet/NBDExport/main/README.md</ReadMe>
-  <ExtraSearchTerms>NBD NBDExport qemu-nbd qemu-img block export imaging disk image qcow2 convert NbdExport nbdexport feed-nudge-20260831</ExtraSearchTerms>
+  <ExtraSearchTerms>NBD NBDExport qemu-nbd qemu-img block export imaging disk image qcow2 convert NbdExport nbdexport feed-nudge-20260913</ExtraSearchTerms>
   <IconFA>database</IconFA>
   <MinVer>6.12.0</MinVer>
   <DonateText>Support development</DonateText>
