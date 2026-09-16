@@ -10,7 +10,8 @@
   <Description>Host disks over NBD, pull remote nbd:// targets, or convert a local /dev disk or file to qcow2/raw under /mnt. Settings → Network Services → NBD. Read-only Host by default; prefer private bind. Status lists plugin and external qemu-img jobs.</Description>
   <Category>Network:Management</Category>
   <ReadMe>https://raw.githubusercontent.com/ibigsnet/NBDExport/main/README.md</ReadMe>
-  <ExtraSearchTerms>NBD NBDExport qemu-nbd qemu-img block export imaging disk image qcow2 convert NbdExport nbdexport feed-nudge-20260913</ExtraSearchTerms>
+  <ExtraSearchTerms>NBD NBDExport qemu-nbd qemu-img block export imaging disk image qcow2 convert NbdExport nbdexport feed-nudge-20260916</ExtraSearchTerms>
+  <Icon>https://raw.githubusercontent.com/ibigsnet/unraid-templates/main/icon.svg</Icon>
   <IconFA>database</IconFA>
   <MinVer>6.12.0</MinVer>
   <DonateText>Support development</DonateText>

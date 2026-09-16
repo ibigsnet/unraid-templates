@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-label="IBIGS">
+  <rect width="512" height="512" fill="#0A2744"/>
+  <!-- Umbrella shaft + J-hook -->
+  <path fill="none" stroke="#6E5338" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"
+        d="M268 118 L268 318 C268 362 236 388 198 378"/>
+  <!-- Canopy -->
+  <path fill="#C5DDD6"
+        d="M96 210
+           C96 118 176 78 256 78
+           C336 78 416 118 416 210
+           C372 188 336 210 320 210
+           C300 210 280 176 256 176
+           C232 176 212 210 192 210
+           C176 210 140 188 96 210 Z"/>
+  <text x="256" y="430" text-anchor="middle" fill="#FFFFFF"
+        font-family="Arial Black, Arial, Helvetica, sans-serif"
+        font-size="118" font-weight="800" letter-spacing="2">IBIGS</text>
+</svg>
