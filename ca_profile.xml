@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <CommunityApplications>
   <Profile>
-RifleJock Unraid plugins: Storage Guard, Thunderbolt Net, Fabric Routing, and NBD Export.
+RifleJock Unraid plugins: Storage Guard, Thunderbolt Net, Fabric Routing, and NBD Export. Docker: neos-headless.
 CA installs from each project's main branch. Catalog: github.com/ibigsnet/unraid-templates.
 Lab WIP: each project's testing raw .plg (not CA).
 Support via each app Project and Support links.
