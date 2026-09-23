@@ -12,7 +12,7 @@ Layout matches the [Community Apps starter](https://github.com/unraid/unraid-com
 | **NBD Export** | `…/NBDExport/**main**/nbd.plg` | [NBDExport](https://github.com/ibigsnet/NBDExport) |
 
 - This catalog repo: branch **`main` only** (CA reads XMLs here).
-- Plugin wrappers: `plugins/*.xml` (`<Plugin>`). Root `*.xml` copies exist for the older AppFeed parser; both point at the same `/main/` `.plg`.
+- Plugin wrappers live only in `plugins/*.xml` (`<Plugin>`), same as the starter. Root `ca_profile.xml` is repository metadata, not an app.
 - Each plugin **install/update** URL: that project’s **`main`** branch. `PluginURL` here must match the `pluginURL` entity inside that `.plg`.
 - Lab/WIP: install from each project’s **`testing`** raw `.plg`. CA installs **`main`**.
 
