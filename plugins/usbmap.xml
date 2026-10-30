@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Plugin>
+  <Name>USB Map</Name>
+  <PluginURL>https://raw.githubusercontent.com/ibigsnet/UsbMap/main/usbmap.plg</PluginURL>
+  <TemplateURL>https://raw.githubusercontent.com/ibigsnet/unraid-templates/main/plugins/usbmap.xml</TemplateURL>
+  <PluginAuthor>RifleJock</PluginAuthor>
+  <Support>https://github.com/ibigsnet/UsbMap/issues</Support>
+  <Project>https://github.com/ibigsnet/UsbMap</Project>
+  <Overview>A map of your USB hardware for passthrough planning: each USB controller with its IOMMU group and whether it is safe to pass through to a VM (and which one holds the Unraid boot device), the USB 2 / USB 3 port pairs behind each physical connector, hubs, and devices with their link speed against the port maximum. Name your ports with Identify mode (plug something in, the port lights up). Thunderbolt / USB4 controllers are linked to their USB side. Read-only. Tools → USB Map.</Overview>
+  <Description>A map of USB controllers, IOMMU groups, ports, hubs and devices for passthrough planning, with the boot-device controller marked and port naming. Read-only. Tools → USB Map.</Description>
+  <Category>Tools:Utilities Tools:System</Category>
+  <ReadMe>https://raw.githubusercontent.com/ibigsnet/UsbMap/main/README.md</ReadMe>
+  <ExtraSearchTerms>USB xHCI IOMMU VFIO passthrough controller port map Thunderbolt USB4 UsbMap</ExtraSearchTerms>
+  <Icon>https://raw.githubusercontent.com/ibigsnet/unraid-templates/main/icon.svg</Icon>
+  <IconFA>usb</IconFA>
+  <MinVer>7.0.0</MinVer>
+  <DonateText>Support development</DonateText>
+  <DonateLink>https://www.paypal.com/paypalme/RifleJock</DonateLink>
+  <License>GPLv3</License>
+</Plugin>
