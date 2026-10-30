@@ -13,7 +13,7 @@
   <ExtraSearchTerms>FRR FRRouting OpenFabric fabricd FabricRouting UnraidFRR routing zebra</ExtraSearchTerms>
   <Icon>https://raw.githubusercontent.com/ibigsnet/FabricRouting/main/icon.png</Icon>
   <IconFA>share-alt</IconFA>
-  <MinVer>6.12.0</MinVer>
+  <MinVer>7.0.0</MinVer>
   <DonateText>Support development</DonateText>
   <DonateLink>https://www.paypal.com/paypalme/RifleJock</DonateLink>
   <License>GPLv3</License>

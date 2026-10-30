@@ -10,6 +10,7 @@ Community Applications catalog for **RifleJock / ibigsnet** Unraid plugins.
 | **Thunderbolt Net** | `…/ThunderboltNet/**main**/thunderboltnet.plg` | [ThunderboltNet](https://github.com/ibigsnet/ThunderboltNet) |
 | **Fabric Routing** | `…/FabricRouting/**main**/fabricrouting.plg` | [FabricRouting](https://github.com/ibigsnet/FabricRouting) |
 | **NBD Export** | `…/NBDExport/**main**/nbd.plg` | [NBDExport](https://github.com/ibigsnet/NBDExport) |
+| **VNC Bind** | `…/VncBind/**main**/vncbind.plg` | [VncBind](https://github.com/ibigsnet/VncBind) |
 
 - This catalog: branch **`main` only**.
 - Plugin install URLs are each project’s **`main`** branch `.plg`.

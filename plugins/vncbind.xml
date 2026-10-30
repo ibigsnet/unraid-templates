@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Plugin>
+  <Name>VNC Bind</Name>
+  <PluginURL>https://raw.githubusercontent.com/ibigsnet/VncBind/main/vncbind.plg</PluginURL>
+  <TemplateURL>https://raw.githubusercontent.com/ibigsnet/unraid-templates/main/plugins/vncbind.xml</TemplateURL>
+  <PluginAuthor>RifleJock</PluginAuthor>
+  <Support>https://github.com/ibigsnet/VncBind/issues</Support>
+  <Project>https://github.com/ibigsnet/VncBind</Project>
+  <Overview>Keeps each VM's VNC console on the addresses you choose instead of every interface. A saved listen on all interfaces is moved to the local console address and forwarded only on the interfaces you check (for example a VPN or LAN). VNC passwords are kept. Optional alert when a host with an internet address has an open VNC listen. Settings → User Utilities → VNC Bind.</Overview>
+  <Description>Keeps each VM's VNC console on the addresses you choose instead of every interface, forwarded only on the interfaces you check. VNC passwords are kept. Optional alert for an open VNC listen on an internet-facing host. Settings → User Utilities → VNC Bind.</Description>
+  <Category>Tools:Utilities Network:Management</Category>
+  <ReadMe>https://raw.githubusercontent.com/ibigsnet/VncBind/main/README.md</ReadMe>
+  <ExtraSearchTerms>VNC VncBind VM console listen bind interface security</ExtraSearchTerms>
+  <Icon>https://raw.githubusercontent.com/ibigsnet/unraid-templates/main/icon.svg</Icon>
+  <IconFA>desktop</IconFA>
+  <MinVer>6.12.0</MinVer>
+  <DonateText>Support development</DonateText>
+  <DonateLink>https://www.paypal.com/paypalme/RifleJock</DonateLink>
+  <License>GPLv3</License>
+</Plugin>
