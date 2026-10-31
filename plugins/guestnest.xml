@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Plugin>
+  <Name>Guest Nest</Name>
+  <PluginURL>https://raw.githubusercontent.com/ibigsnet/GuestNest/main/guestnest.plg</PluginURL>
+  <TemplateURL>https://raw.githubusercontent.com/ibigsnet/unraid-templates/main/plugins/guestnest.xml</TemplateURL>
+  <PluginAuthor>RifleJock</PluginAuthor>
+  <Support>https://github.com/ibigsnet/GuestNest/issues</Support>
+  <Project>https://github.com/ibigsnet/GuestNest</Project>
+  <Overview>Lists the guests inside a Proxmox VM that runs on Unraid. Nested VMs appear under the parent VM on Virtual Machines, and LXC containers on the LXC page, the VM page, or both. The list comes from the VM's QEMU guest agent (one fixed read-only pvesh query, no token), a Proxmox API token limited to VM.Audit (certificate verified or pinned), or both. Running Proxmox VMs are detected on the Settings page. Stock Unraid files are not edited. Settings → User Utilities → Guest Nest.</Overview>
+  <Description>Lists the guests inside a Proxmox VM that runs on Unraid, under the parent VM. Reads them through the VM's QEMU guest agent or a read-only Proxmox API token. Settings → User Utilities → Guest Nest.</Description>
+  <Category>Tools:Utilities Tools:System</Category>
+  <ReadMe>https://raw.githubusercontent.com/ibigsnet/GuestNest/main/README.md</ReadMe>
+  <ExtraSearchTerms>Proxmox PVE nested virtualization VM LXC guest agent GuestNest</ExtraSearchTerms>
+  <Icon>https://raw.githubusercontent.com/ibigsnet/unraid-templates/main/icon.svg</Icon>
+  <IconFA>cubes</IconFA>
+  <MinVer>6.12.0</MinVer>
+  <DonateText>Support development</DonateText>
+  <DonateLink>https://www.paypal.com/paypalme/RifleJock</DonateLink>
+  <License>GPLv3</License>
+</Plugin>

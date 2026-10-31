@@ -12,6 +12,7 @@ Community Applications catalog for **RifleJock / ibigsnet** Unraid plugins.
 | **NBD Export** | `…/NBDExport/**main**/nbd.plg` | [NBDExport](https://github.com/ibigsnet/NBDExport) |
 | **VNC Bind** | `…/VncBind/**main**/vncbind.plg` | [VncBind](https://github.com/ibigsnet/VncBind) |
 | **USB Map** | `…/UsbMap/**main**/usbmap.plg` | [UsbMap](https://github.com/ibigsnet/UsbMap) |
+| **Guest Nest** | `…/GuestNest/**main**/guestnest.plg` | [GuestNest](https://github.com/ibigsnet/GuestNest) |
 
 - This catalog: branch **`main` only**.
 - Plugin install URLs are each project’s **`main`** branch `.plg`.
